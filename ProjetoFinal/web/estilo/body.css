@@ -1,0 +1,196 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body.div{
+    color: #fff;
+    overflow-x: hidden;
+}
+
+div#titulo{
+   color: #FFF;
+   text-align: center;
+   height: 50px;
+   width: 56%;
+   position:relative;
+   font-size: 0;
+   float: left;
+   text-align: right;
+}
+/* Parte de cima da tabela*/
+#tables{
+    
+    height: 50px;
+    margin-top: 150px;
+    
+}
+
+div#nome{
+    width: 44%;
+    height: 50px;
+    float: left;
+    text-align: right;
+}
+
+div#menus{
+    background-color: #fff;
+}
+
+img{
+     
+    width: 40px;
+}
+
+input[type="checkbox"]{
+    display: none;  
+}
+
+/* fundo cor do menu*/
+nav{
+    background: url("../imagens/bmenu.gif") no-repeat bottom/ cover;
+    background-color: #0c0c0c;
+    width: 250px;
+    
+    height: 100%;
+    left: -250px;
+    position: fixed;
+    transition:.5s;
+  
+     
+}
+
+input[type="checkbox"]:checked ~ nav{
+    transform: translateX(250px);
+}
+
+input[type="checkbox"]:checked ~ nav ul{
+    transform: translateX(250px);
+}
+
+#menu-h ul{
+    list-style: none;
+    padding: 0;
+    top: 70px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+/* Texto dos Menus*/
+#menu-h ul li a{
+    background: url("../imagens/textmenu.jpg") no-repeat center/ cover;
+    text-decoration: none;
+    display: block;
+    padding: 10px 5px;
+    color: #fff;
+    border-style: outset;
+    margin-bottom: 10px;
+}
+/* COR AO PASSAR O MOUSE NO MENU.*/
+#menu-h ul li a:hover{
+    background: url("../imagens/textmenu2.jpg") no-repeat center/ cover;
+    opacity: 1;
+    background-color: #c0a16b;
+    color: white;
+    transition:.4s;
+    border-color: #330099;
+}
+
+label{
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+label.active {
+}
+
+/*ANIMAÇÃO BOTÃO MENU*/
+
+.button{
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    
+    background: #fff;
+    border-radius: 10%;
+    
+    position: absolute;
+    
+}
+
+.button:after{
+    content : '';
+    
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    
+    width: 70%;
+    height: 10%;
+    
+    border-radius: 20px;
+    
+    
+    background-color: #000;
+    transition: 1s ease;
+}
+
+.button:before{
+    content: '';
+    
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    
+    width: 40%;
+    height: 10%;
+    
+    border-radius: 50px;
+   
+    background-color: #000;
+    transition: 1s ease;
+}
+
+#chec:checked ~ label .button:after{
+    transform: rotate(225deg);
+    
+    top: 45%;
+    left:15%;
+}
+
+#chec:checked ~ label .button:before{
+    transform: rotate(-405deg);
+    
+    width: 70%;
+    height: 10%;
+    
+    top: 45%;
+    left:15%;
+}
+
+#chec:checked ~ section{
+     margin-left: 250px;
+}
+
+section{
+    background: url("../imagens/back.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: .5s;
+}
+
+#bar_top{
+    height: 70px;
+    width:100%;
+    background-color: #251631;
+    opacity: 0.8;
+}
+
+#bar_top a{
+    float: right;
+}
+
+div#sair{
+    float:right;
+}

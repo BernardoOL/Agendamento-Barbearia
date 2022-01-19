@@ -1,0 +1,26 @@
+.menu{
+    height: 50px;
+    margin-left: 250px; 
+    width: 100%;
+    text-align: center;
+}
+
+
+
+div#name{
+    width: 15%;
+    height: 40px;
+    margin-top: 60px;
+}
+
+div#name a{
+    text-decoration: none;
+    background-color: #39395a;
+}
+
+div#name a:hover{
+    color: #39395a;
+    background-color: #fff; 
+}
+
+

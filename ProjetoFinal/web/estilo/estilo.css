@@ -1,0 +1,49 @@
+body{
+        margin: 0;
+	padding: 0;
+	justify-content: center;
+	align-items: center;
+	
+    background: url("../imagens/1.jpg") no-repeat center/ cover;
+}
+
+.main {
+        
+        position:absolute;
+        width: 50%;
+	height: 50%;
+        
+        opacity: 1;
+	border-radius: 10px;
+        box-shadow: 5px 20px 50px #000;
+        border-radius: 30px;
+        
+        
+}
+
+.textos{
+        color: #ffffff; 
+        top: -18px;
+        padding: 1px;
+        font-size: 16px; 
+}
+
+.caixas {
+    
+    width: 200px;
+    background-color: #ffffff;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+  
+}
+
+.alinha {
+    
+    margin-top: 10px;
+    
+}
+
