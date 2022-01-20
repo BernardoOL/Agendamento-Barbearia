@@ -1,2 +1,2 @@
-# Agendamento-Barbearia
- Software de agendamento para ~~barbearia~~
+# Agendamento Barbearia
+ Software de agendamento para barbearia
